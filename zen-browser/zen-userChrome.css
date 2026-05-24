@@ -11,9 +11,6 @@
 }
 
 :root {
-  /* Match scrollbars with userContent.css safely by inheriting */
-  scrollbar-color: var(--primary) transparent !important;
-  
   /* --- Zen Color Variables --- */
   --zen-primary-color: var(--primary) !important;
   --zen-colors-primary: var(--base) !important;
@@ -133,7 +130,7 @@ toolbarbutton#tabs-newtab-button {
 }
 
 .urlbarView-favicon {
-  background-color: var(--base) !important;
+  background-color: transparent !important;
 }
 
 #urlbar-results {
@@ -490,4 +487,18 @@ panel[type="autocomplete-richlistbox"],
 
 #editBMPanel_folderTree treechildren::-moz-tree-twisty(selected) {
   fill: var(--on_primary) !important;
+}
+
+/* Style the About Zen Browser Dialog background */
+@-moz-document url("chrome://browser/content/aboutDialog.xhtml") {
+  #aboutDialogContainer,
+  #clientBox {
+    background-color: var(--base) !important;
+    background-image: none !important;
+  }
+
+  #bottomBox {
+    background-color: var(--overlay) !important;
+    background-image: none !important;
+  }
 }
