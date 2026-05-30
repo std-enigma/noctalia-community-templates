@@ -502,3 +502,72 @@ panel[type="autocomplete-richlistbox"],
     background-image: none !important;
   }
 }
+/* --- Download Item Action Buttons (X, Re-install) --- */
+.downloadButton {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--primary) !important;
+  --button-background-color-ghost: transparent !important;
+  --button-background-color-ghost-hover: transparent !important;
+  --button-background-color-ghost-active: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.downloadButton > .button-box {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+.downloadButton > .button-box > .button-icon {
+  fill: var(--primary) !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.downloadButton:hover > .button-box {
+  background-color: transparent !important;
+}
+
+.downloadButton:hover:active > .button-box {
+  background-color: transparent !important;
+}
+
+/* --- Download Panel Item Buttons (direct richlistitem children) --- */
+richlistitem > button {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--primary) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+richlistitem > button > .button-box {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+richlistitem > button > .button-box > .button-icon {
+  fill: var(--primary) !important;
+}
+
+richlistitem > button:hover > .button-box {
+  background-color: transparent !important;
+}
+
+richlistitem > button:hover:active > .button-box {
+  background-color: transparent !important;
+}
+
+/* --- Exclude download panel from ContentSelectDropdown styling --- */
+#downloadsListBox > richlistitem,
+#downloadsListBox > richlistitem[_moz-menuactive="true"],
+#downloadsListBox > richlistitem:hover,
+#downloadsListBox > richlistitem[selected="true"],
+#downloadsListBox > richlistitem[_moz-menuactive="true"] *,
+#downloadsListBox > richlistitem:hover *,
+#downloadsListBox > richlistitem[selected="true"] * {
+  background-color: transparent !important;
+}
