@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-config_file="$HOME/.config/yazi/theme.toml"
+config_file="${XDG_CONFIG_HOME:-$HOME/.config}/yazi/theme.toml"
 
 mkdir -p "$(dirname "$config_file")"
 

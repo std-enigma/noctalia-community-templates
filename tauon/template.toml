@@ -4,4 +4,4 @@ category = "audio"
 
 [templates.tauon]
 input_path = "tauon.txt"
-output_path = "~/.local/share/TauonMusicBox/theme/Noctalia.ttheme"
+output_path = "$XDG_DATA_HOME/TauonMusicBox/theme/Noctalia.ttheme"

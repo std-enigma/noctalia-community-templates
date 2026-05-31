@@ -4,4 +4,4 @@ category = "editor"
 
 [templates.zed]
 input_path = "zed.json"
-output_path = "~/.config/zed/themes/noctalia.json"
+output_path = "$XDG_CONFIG_HOME/zed/themes/noctalia.json"

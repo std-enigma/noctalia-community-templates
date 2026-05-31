@@ -2,7 +2,7 @@
 set -euo pipefail
 
 icon_source="${1:-}"
-icon_target="$HOME/.local/share/vicinae/themes/noctalia.svg"
+icon_target="${XDG_DATA_HOME:-$HOME/.local/share}/vicinae/themes/noctalia.svg"
 
 if [ -n "$icon_source" ] && [ -f "$icon_source" ]; then
     mkdir -p "$(dirname "$icon_target")"

@@ -4,5 +4,5 @@ category = "audio"
 
 [templates.spicetify]
 input_path = "spicetify.ini"
-output_path = "~/.config/spicetify/Themes/Comfy/color.ini"
+output_path = "$XDG_CONFIG_HOME/spicetify/Themes/Comfy/color.ini"
 post_hook = "bash '{{ config_dir }}/apply.sh'"

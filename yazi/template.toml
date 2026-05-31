@@ -4,5 +4,5 @@ category = "misc"
 
 [templates.yazi]
 input_path = "yazi.toml"
-output_path = "~/.config/yazi/flavors/noctalia.yazi/flavor.toml"
+output_path = "$XDG_CONFIG_HOME/yazi/flavors/noctalia.yazi/flavor.toml"
 post_hook = "bash '{{ config_dir }}/apply.sh'"

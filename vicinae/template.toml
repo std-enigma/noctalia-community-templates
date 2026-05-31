@@ -4,5 +4,5 @@ category = "launcher"
 
 [templates.vicinae]
 input_path = "vicinae.toml"
-output_path = "~/.local/share/vicinae/themes/noctalia.toml"
+output_path = "$XDG_DATA_HOME/vicinae/themes/noctalia.toml"
 post_hook = "bash '{{ config_dir }}/apply.sh'"

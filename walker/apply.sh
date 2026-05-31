@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-config_file="$HOME/.config/walker/config.toml"
+config_file="${XDG_CONFIG_HOME:-$HOME/.config}/walker/config.toml"
 
 if [ ! -f "$config_file" ]; then
     echo "Error: walker config file not found at $config_file" >&2

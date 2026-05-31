@@ -4,4 +4,4 @@ category = "misc"
 
 [templates.telegram]
 input_path = "telegram.tdesktop-theme"
-output_path = "~/.config/telegram-desktop/themes/noctalia.tdesktop-theme"
+output_path = "$XDG_CONFIG_HOME/telegram-desktop/themes/noctalia.tdesktop-theme"
