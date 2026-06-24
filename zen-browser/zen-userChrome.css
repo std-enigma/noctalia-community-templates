@@ -358,6 +358,7 @@ toolbarbutton.zen-glance-sidebar-split.toolbarbutton-1:hover {
   --panel-background: var(--overlay) !important;
   --panel-color: var(--text) !important;
   --panel-border-color: transparent !important;
+  --panel-padding: 0 !important;
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
@@ -365,15 +366,16 @@ toolbarbutton.zen-glance-sidebar-split.toolbarbutton-1:hover {
 #PopupAutoComplete > richlistbox,
 panel[type="autocomplete-richlistbox"],
 .autocomplete-richlistbox {
-  background-color: var(--overlay) !important;
+  background-color: transparent !important;
   color: var(--text) !important;
   border: none !important;
-  border-radius: 8px !important;
   overflow-y: auto !important;
+  padding: 8px 8px !important;
 }
+
 .autocomplete-richlistbox richlistitem,
 .autocomplete-richlistitem {
-  background-color: transparent !important;
+  background-color: var(--overlay) !important;
   color: var(--text) !important;
   border: none !important;
 }
