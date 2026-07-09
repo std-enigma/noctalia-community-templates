@@ -1,0 +1,7 @@
+[catalog.heroic]
+name = "Heroic Launcher"
+category = "misc"
+
+[templates.heroic]
+input_path = 'heroic.css'
+output_path = '~/.config/heroic/themes/matugen.css'
