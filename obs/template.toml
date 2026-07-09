@@ -1,0 +1,7 @@
+[catalog.obs]
+name = "OBS"
+category = "misc"
+
+[templates.obs]
+input_path = 'matugen.obt'
+output_path = '~/.config/obs-studio/themes/matugen.obt'
