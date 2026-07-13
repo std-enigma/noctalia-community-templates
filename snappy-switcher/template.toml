@@ -1,6 +1,6 @@
 [catalog.snappy-switcher]
 name = "snappy-switcher"
-category = "switcher"
+category = "system"
 
 [templates.snappy-switcher]
 input_path = "noctalia.ini"
